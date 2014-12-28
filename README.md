@@ -92,3 +92,4 @@ $('body').on("click", '.data li:not(.active, .disabled)', function (e) {
 | firstL        | string, «     | The first link text/icon                                                       |
 | lastL         | string, »     | The last link text/icon                                                        |
 | ellipsis      | bool, true    | Defines whether to show ellipsis or not                                        |
+| pClass        | string, pagination    | The css class for the UL element                                          |
