@@ -3,8 +3,8 @@ smarty-pdo-mysql-ajax-php-pagination
 
 This is a simple php pagination class which uses pdo or mysqli and also supports ajax. 
 
-<b>Usage</b>
-The pagination class accepts options and returns the
+<b>Usage</b><br/>
+The pagination class takes options as an array and returns the links and result from database which then you can use to echo the rows.<br/>
 <code>
 ```php
 include_once("pagination.php");
