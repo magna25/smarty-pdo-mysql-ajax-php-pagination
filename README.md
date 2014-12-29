@@ -69,7 +69,7 @@ function ajax(p){
 		}
 	})
 }
-$('body').on("click", '.data li:not(.active, .disabled)', function (e) {
+$('body').on("click", '.pagination li:not(.active, .disabled)', function (e) {
   var page = $(this).attr('data-page');
   ajax(page);
 });
