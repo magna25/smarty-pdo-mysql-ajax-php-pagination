@@ -65,7 +65,7 @@ class Pagination{
 	
   //result from the query
 	public function result($limit){
-		if($this->current >= $this->pages()){
+		if($this->current > $this->pages()){
 			$limit = " LIMIT 0,".$this->limit;
 		}
 		if($this->options->db_type == 'pdo'){
