@@ -50,7 +50,7 @@ class Pagination{
 			$stmt->execute($this->options->params);
 			return $stmt->fetchColumn(0);
 		}
-		else if($this->options->db_type == 'mysql'){
+		else if($this->options->db_type == 'mysqli'){
 			$stmt = $this->options->db->prepare($this->options->sql);
 			echo $this->options->db->error;
 			if($this->options->params){
@@ -75,7 +75,7 @@ class Pagination{
 			$res = $stmt->fetchAll();
 			return $res;
 		}
-		elseif($this->options->db_type == 'mysql'){
+		elseif($this->options->db_type == 'mysqli'){
 			$stmt = $this->options->db->prepare($this->options->sql.$limit);
 			if($this->options->params){
 				call_user_func_array(array($stmt, "bind_param"), array_merge(array(str_repeat('s', count($this->options->params))), $this->refValues($this->options->params)));
