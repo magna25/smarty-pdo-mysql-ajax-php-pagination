@@ -20,7 +20,7 @@ else{
 
 $options = array
           (
-          'db_type'=> 'mysql',
+          'db_type'=> 'mysqli',
           'db' => $db,
           'sql' => 'select * from users where first_name = ? or first_name = ?',
           'params' => array('John', 'Max')
