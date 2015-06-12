@@ -1,6 +1,7 @@
 <?php 
 /*
    Smarty - pdo/mysqli pagination: 12/28/14
+   @Author - Henok Hailemariam
 */
 class Pagination{
 	public function __construct($options){
