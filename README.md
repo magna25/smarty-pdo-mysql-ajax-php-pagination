@@ -6,7 +6,6 @@ This is a simple php pagination class which uses pdo or mysqli and also supports
 <b>Usage</b><br/>
 The pagination class takes options as an array and returns the links and result from database which then you can use to echo the rows.<br/>
 <code>
-```php
 include_once("pagination.php");
 $items = 5;
 $page = 1;
@@ -45,15 +44,14 @@ foreach($result as $row){
 }
 
 $obj->showLinks();
-```
+
 </code>
 <b>Ajax Example</b>
 <code>
-```html
+
 <div class="data"></div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-```
-```javascript
+
 ajax(null);
 function ajax(p){
 	$.ajax({
@@ -73,7 +71,7 @@ $('body').on("click", '.pagination li:not(.active, .disabled)', function (e) {
   var page = $(this).attr('data-page');
   ajax(page);
 });
-```
+
 </code>
 
 <b>Options</b><br/>
